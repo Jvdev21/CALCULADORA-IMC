@@ -1,0 +1,110 @@
+
+body {
+    background-color: #000000;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 50px 10px;
+    color: #ffffff;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h1:hover {
+    color: #3700ff;
+}
+
+h6 {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+h6:hover{
+    color: #3700ff;
+
+}
+
+table {
+    margin: 0 auto;
+    padding: 20px;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
+    background-color: #000000;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+td {
+    padding: 0.7%;
+    font-size: 1.5em;
+    
+}
+
+td:first-child {
+    
+    padding-left:20%;
+}
+
+
+input[type="text"], input[type="number"], input[type="checkbox"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #c4c3c3;
+    border-radius: 5px;
+    font-size: 0.5em;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-left: 12px;
+}
+
+input:hover {
+    background-color:#524040;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3700ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #524040;
+}
+
+#Resultado {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #3700ff;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    table {
+        width: 100%;
+        padding: 10px;
+    }
+}

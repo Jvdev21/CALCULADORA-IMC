@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA IMC</title>
+    <link rel="stylesheet" type="text/css" href="Style.css" media="screen" />
+   
+</head>
+<body>
+    <h1>CALCULADORA IMC : </h1>
+    
+    <table>
+        <tr>
+            <td colspan="2">
+                
+            </td>
+        </tr>
+        <tr>
+            <td>Masculino</td>
+            <td><input type="checkbox" name="opções" id="Masculino"></td>
+        </tr>
+        <tr>
+            <td>Feminino</td>
+            <td><input type="checkbox" name="opções" id="Feminino"></td>
+        </tr>
+        <tr>
+            <td>Outros</td>
+            <td><input type="checkbox" name="opções" id="Outros"></td>
+        </tr>
+        <tr>
+            <td>Nome: </td>
+            <td><input type="text" name="Nome" size="20"></td>
+        </tr>
+        <tr>
+            <td>Peso (kg) </td>
+            <td><input type="number" name="Peso" size="40"></td>
+        </tr>
+        <tr>
+            <td>Altura (m) </td>
+            <td><input type="number" name="Altura" size="40"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button onclick="calcularIMC()">Calcular IMC</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button onclick="mostrarInformacoes()">Mais Informações</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div id="Resultado"></div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div id="Informacoes" style="display: none;">
+                    <h3>Informações sobre IMC</h3>
+                    <p>O Índice de Massa Corporal (IMC) é uma medida que usa a altura e o peso para calcular se uma pessoa tem um peso saudável. A fórmula do IMC é peso (kg) / altura (m)².</p>
+                    <ul>
+                        <li>IMC abaixo de 18.5: Abaixo do peso</li>
+                        <li>IMC entre 18.5 e 24.9: Peso normal</li>
+                        <li>IMC entre 25 e 29.9: Sobrepeso</li>
+                        <li>IMC 30 ou acima: Obesidade</li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
